@@ -34,24 +34,24 @@
 
     <main class="main">
         <img alt="Bannière du site" class="main__banner" loading="lazy" src="./assets/img/banner/banner.webp">
-        <div class="card">
+        <div class="container">
             <p class="text__paragraph">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet hic illo maiores incidunt, facilis, vel inventore sequi dolorem fuga impedit quae assumenda dolor eveniet magni rem maxime minima, sed repellat.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet hic illo maiores incidunt, facilis, vel inventore sequi dolorem fuga impedit quae assumenda dolor eveniet magni rem maxime minima, sed repellat.
             </p>
             <div class="buttons__list">
-                <button class="button">Voir la liste des films</button>
-                <button class="button">Nous contacter</button>
+                <a class="button" href="liste-des-fils.html">Voir la liste des films</a>
+                <a class="button button--secondary" href="contact.html">Nous contacter</a>
             </div>
-        </div>
 
-        <span class="divider"></span>
+            <span class="divider"></span>
 
-        <span class="text__category">Quelques films</span>
-        <div class="movies__list">
-            <img alt="Poster de film" class="movie__poster" loading="lazy" src="./assets/img/movies/chambre_officiers.webp">
-            <img alt="Poster de film" class="movie__poster" loading="lazy" src="./assets/img/movies/gattaca.webp">
-            <img alt="Poster de film" class="movie__poster" loading="lazy" src="./assets/img/movies/oss_117.webp">
-            <img alt="Poster de film" class="movie__poster" loading="lazy" src="./assets/img/movies/benjamin_button.webp">
+            <span class="text__category">Quelques films</span>
+            <div class="movies__list">
+                <img alt="Poster de film" class="movie__poster" loading="lazy" src="./assets/img/movies/chambre_officiers.webp">
+                <img alt="Poster de film" class="movie__poster" loading="lazy" src="./assets/img/movies/gattaca.webp">
+                <img alt="Poster de film" class="movie__poster" loading="lazy" src="./assets/img/movies/oss_117.webp">
+                <img alt="Poster de film" class="movie__poster" loading="lazy" src="./assets/img/movies/benjamin_button.webp">
+            </div>
         </div>
     </main>
 
@@ -59,8 +59,7 @@
         <span class="footer__copyright">© 2023 | Films de Plein Air</span>
         <form action="#" method="post">
             <span class="text__category">Newsletter</span>
-            <label for="newsletter__email">Adresse email</label>
-            <input id="newsletter__email" name="newsletter__email" type="email">
+            <input class="form__field" name="newsletter__email" placeholder="Adresse email" type="email">
             <button class="button" type="submit">M'inscrire à la newsletter</button>
         </form>
         <a class="footer__link link" href="mentions-legales.html">Mentions légales</a>

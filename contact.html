@@ -34,24 +34,20 @@
 
     <main class="main">
         <form action="#" method="post">
-            <label for="contact__name">Nom complet</label>
-            <input id="contact__name" name="contact__name" type="text">
+            <input class="form__field" name="contact__name" placeholder="Nom complet" type="text">
 
-            <label for="contact__email">Adresse email</label>
-            <input id="contact__email" name="contact__email" type="email">
+            <input class="form__field" name="contact__email" placeholder="Adresse email" type="email">
 
-            <label for="contact__subject">Sujet du message</label>
-            <select id="contact__subject" name="contact__subject">
+            <select class="form__field" name="contact__subject">
                 <option disabled selected>Choisissez votre sujet</option>
                 <option>Renseignements</option>
                 <option>Problèmes</option>
                 <option>Autre</option>
             </select>
 
-            <label for="contact__message">Message</label>
-            <textarea id="contact__message" name="contact__message"></textarea>
+            <textarea class="form__field" name="contact__message" placeholder="Message"></textarea>
             
-            <input id="contact__checkbox" name="contact__checkbox" type="checkbox">
+            <input class="form__field" id="contact__checkbox" name="contact__checkbox" type="checkbox">
             <label for="contact__checkbox">
                 J'accepte que les informations saisies soient exploitées dans le cadre de ma demande de contact. 
                 Vous disposez d'un droit d'accès, de rectification et d'opposition
