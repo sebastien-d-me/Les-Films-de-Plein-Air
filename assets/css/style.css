@@ -325,7 +325,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px 0;
-    margin-top: 10px;
+    margin: 10px 0 20px 0;
 }
 
 .movie__poster {
@@ -492,7 +492,7 @@ body {
 
     .movie__poster {
         display: flex;
-        flex: 1 0 calc(50% - 15px);
+        flex: 1 0 calc(25% - (15px * 3 / 4));
         object-fit: contain;
         width: unset;
     }
@@ -518,11 +518,6 @@ body {
         display: flex;
         flex-direction: column;
         gap: 0 15px;
-    }
-
-    /* Movies */
-    .movie__poster {
-        flex: 1 0 calc(25% - (15px * 3 / 4));
     }
 
     /** Layouts **/
