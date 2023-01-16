@@ -236,6 +236,7 @@ body {
     font-size: 16px;
     height: 50px;
     justify-content: center;
+    margin: auto;
     text-decoration: none;
     transition: 0.5s;
     width: 250px;
@@ -258,14 +259,23 @@ body {
     color: var(--blue);
 }
 
-/* Fields */
+/* Divider */
+.divider {
+    background: var(--white);
+    display: block;
+    height: 1px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Form */
 .form__field {
     border: none;
     border-radius: 10px;
     font-size: 16px;
-    height: 50px;
     margin: 10px 0;
-    padding: 20px 10px;
+    min-height: 50px;
+    padding: 10px;
     width: 250px;
 }
 
@@ -287,6 +297,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px 0;
+    margin-top: 10px;
 }
 
 .movie__poster {
@@ -302,11 +313,13 @@ body {
 
 .text__category {
     display: block;
+    font-size: 20px;
     font-weight: bold;
 }
 
 
-/** Header **/
+/** Layouts **/
+/* Header */
 .header {
     align-items: center;
     background-color: var(--black);
@@ -332,8 +345,7 @@ body {
     display: none;
 }
 
-
-/** Main **/
+/* Main */
 .main {
     flex: 1 0 auto;
     padding-bottom: 20px;
@@ -346,8 +358,7 @@ body {
     width: calc(100% - 40px);
 }
 
-
-/** Footer **/
+/* Footer */
 .footer {
     align-items: center;
     background-color: var(--black);
@@ -366,4 +377,46 @@ body {
 }
 
 
-/** Accueil */
+/** Pages **/
+/* Accueil */
+
+
+/** Responsive **/
+@media screen and (min-width: 768px) {
+
+    /** Components **/
+    /* Buttons */
+    .buttons__list {
+        flex-direction: row;
+    }
+
+    /* Movies */
+    .movies__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .movie__poster {
+        display: flex;
+        flex: 1 0 calc(50% - 15px);
+        object-fit: contain;
+        width: unset;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    /** Components **/
+    /* Form */
+    .form__newsletter {
+        align-items: center;
+        display: flex;
+        gap: 0 15px;
+    }
+
+    /* Movies */
+    .movie__poster {
+        flex: 1 0 calc(25% - (15px * 3 / 4));
+    }
+}
