@@ -291,6 +291,10 @@ body {
     color: var(--red);
 }
 
+.link--active {
+    color: var(--white);
+}
+
 /* Movies */
 .movies__list {
     align-items: center;
