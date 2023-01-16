@@ -234,7 +234,7 @@ body {
 
 .article__date {
     display: block;
-    margin: 10px 0;
+    margin-bottom: 20px;
 }
 
 .article__description {
