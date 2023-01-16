@@ -385,6 +385,11 @@ body {
 @media screen and (min-width: 768px) {
 
     /** Components **/
+    /* Banners */
+    .main__banner {
+        height: 400px;
+    }
+
     /* Buttons */
     .buttons__list {
         flex-direction: row;
@@ -412,11 +417,53 @@ body {
     .form__newsletter {
         align-items: center;
         display: flex;
+        flex-direction: column;
         gap: 0 15px;
     }
 
     /* Movies */
     .movie__poster {
         flex: 1 0 calc(25% - (15px * 3 / 4));
+    }
+
+    /** Layouts **/
+    /* Header */
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: 100px;
+        padding: 12.5px 50px;
+    }
+
+    .header__title {
+        font-size: 32px;
+    }
+
+    /* Nav */
+    .mobile__menu--open {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu__list {
+        display: flex;
+        gap: 0 35px;
+        list-style: none;
+    }
+
+    /* Container */
+    .container {
+        margin: 0 150px;
+        width: calc(100% - 300px);
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 12.5px 50px;
     }
 }
