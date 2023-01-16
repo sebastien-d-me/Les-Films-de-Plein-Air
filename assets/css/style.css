@@ -209,15 +209,27 @@ body {
 
 
 /** Components **/
-/* Article */
+/* Articles */
+.list-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 50px 0;
+}
+
 .article {
     display: flex;
     flex-direction: column;
 }
 
+.article__image {
+    height: 225px;
+    object-fit: cover;
+    width: 100%;
+}
+
 .article__title {
     font-size: 24px;
-    margin: 10px 0;
+    margin: 10px 0 5px 0;
 }
 
 .article__date {
@@ -226,7 +238,7 @@ body {
 }
 
 .article__description {
-    text-align: left;
+    text-align: justify;
 }
 
 /* Buttons */
@@ -271,7 +283,7 @@ body {
     color: var(--blue);
 }
 
-/* Divider */
+/* Dividers */
 .divider {
     background: var(--white);
     display: block;
@@ -449,6 +461,23 @@ body {
 @media screen and (min-width: 768px) {
 
     /** Components **/
+    /* Articles */
+    .list-articles {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px 50px;
+    }
+
+    .article {
+        flex: 1 0 calc(50% - 50px * 1 / 2);
+    }
+
+    .article__image {
+        height: 225px;
+        object-fit: cover;
+        width: 100%;
+    }
+
     /* Buttons */
     .buttons__list {
         flex-direction: row;
@@ -472,6 +501,17 @@ body {
 @media screen and (min-width: 1200px) {
 
     /** Components **/
+    /* Article */
+    .list-articles {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px 50px;
+    }
+
+    .article {
+        flex: 1 0 calc(33% - 50px * 2 / 3);
+    }
+
     /* Form */
     .form__newsletter {
         align-items: center;
