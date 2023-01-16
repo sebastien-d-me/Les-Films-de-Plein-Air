@@ -33,12 +33,16 @@
     </header>
 
     <main class="main">
-        <div class="modal">
-            <span class="modal__close">✖</span>
-            <span class="modal__title">Lorem ipsum</span>
-            <p class="modal__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dicta eaque et deleniti soluta maiores explicabo! Id molestiae explicabo, illum commodi sint fugiat, beatae qui assumenda, vel magni ipsa nesciunt.
-            </p>
+        <div class="container modal">
+            <div class="modal__content">
+                <div class="modal__header">
+                    <span class="modal__close">✖</span>
+                    <span class="modal__title">Lorem ipsum</span>
+                </div>
+                <p class="modal__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dicta eaque et deleniti soluta maiores explicabo! Id molestiae explicabo, illum commodi sint fugiat, beatae qui assumenda, vel magni ipsa nesciunt.
+                </p>
+            </div>
         </div>
     </main>
 
@@ -46,8 +50,7 @@
         <span class="footer__copyright">© 2023 | Films de Plein Air</span>
         <form action="#" class="form__newsletter" method="post">
             <span class="text__category">Newsletter</span>
-            <label for="newsletter__email">Adresse email</label>
-            <input class="form__field" id="newsletter__email" name="newsletter__email" placeholder="Adresse email" type="email">
+            <input class="form__field" name="newsletter__email" placeholder="Adresse email" type="email">
             <button class="button" type="submit">M'inscrire à la newsletter</button>
         </form>
         <a class="footer__link link" href="./mentions-legales.html">Mentions légales</a>
