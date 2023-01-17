@@ -33,28 +33,32 @@
     </header>
 
     <main class="main">
-        <form action="#" class="form__newsletter" method="post">
-            <input class="form__field" name="contact__name" placeholder="Nom complet" type="text">
+        <div class="container">
+            <form action="#" class="form__contact" method="post">
+                <input class="form__field" name="contact__name" placeholder="Nom complet" type="text">
 
-            <input class="form__field" name="contact__email" placeholder="Adresse email" type="email">
+                <input class="form__field" name="contact__email" placeholder="Adresse email" type="email">
 
-            <select class="form__field" name="contact__subject">
-                <option disabled selected>Choisissez votre sujet</option>
-                <option>Renseignements</option>
-                <option>Problèmes</option>
-                <option>Autre</option>
-            </select>
+                <select class="form__field" name="contact__subject">
+                    <option disabled selected>Choisissez votre sujet</option>
+                    <option>Renseignements</option>
+                    <option>Problèmes</option>
+                    <option>Autre</option>
+                </select>
 
-            <textarea class="form__field" name="contact__message" placeholder="Message"></textarea>
-            
-            <input class="form__field" id="contact__checkbox" name="contact__checkbox" type="checkbox">
-            <label for="contact__checkbox">
-                J'accepte que les informations saisies soient exploitées dans le cadre de ma demande de contact. 
-                Vous disposez d'un droit d'accès, de rectification et d'opposition
-            </label>
+                <textarea class="form__field" name="contact__message" placeholder="Message"></textarea>
+                
+                <div class="form__agree">
+                    <input class="form__field" id="contact__checkbox" name="contact__checkbox" type="checkbox">
+                    <label for="contact__checkbox">
+                        J'accepte que les informations saisies soient exploitées dans le cadre de ma demande de contact. 
+                        Vous disposez d'un droit d'accès, de rectification et d'opposition
+                    </label>
+                </div>
 
-            <button class="button" type="submit">Envoyer le message</button>
-        </form>
+                <button class="button" type="submit">Envoyer le message</button>
+            </form>
+        </div>
     </main>
 
     <footer class="footer">
@@ -62,7 +66,7 @@
         <form action="#" class="form__newsletter" method="post">
             <span class="text__category">Newsletter</span>
             <input class="form__field" name="newsletter__email" placeholder="Adresse email" type="email">
-            <button class="button" type="submit">M'inscrire à la newsletter</button>
+            <button class="button button--secondary" type="submit">M'inscrire à la newsletter</button>
         </form>
         <a class="footer__link link" href="./mentions-legales.html">Mentions légales</a>
     </footer>
