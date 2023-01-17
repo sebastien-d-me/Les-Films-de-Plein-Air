@@ -376,6 +376,7 @@ body {
 
 /* Text */
 .text__paragraph {
+    margin-bottom: 10px;
     text-align: justify;
 }
 
@@ -456,6 +457,24 @@ body {
     width: 100%;
 }
 
+/* Presentation */
+.presentation__information {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.presentation__information--icon {
+    display: block;
+    font-size: 24px;
+    text-align: center;
+}
+
+.presentation__map {
+    height: 500px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
 
 /** Responsive **/
 @media screen and (min-width: 768px) {
@@ -495,6 +514,12 @@ body {
         flex: 1 0 calc(25% - (15px * 3 / 4));
         object-fit: contain;
         width: unset;
+    }
+
+    /** Pages **/
+    /* Presentation */
+    .presentation__information--icon {
+        display: inline-block;
     }
 }
 
@@ -565,5 +590,10 @@ body {
     /* Accueil */
     .home__banner {
         height: 400px;
+    }
+
+    /* Presentation */
+    .presentation__map {
+        height: unset;
     }
 }
